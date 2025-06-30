@@ -6,7 +6,7 @@ from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import os
 import numpy as np
 
-# Corrected column names based on CSV header
+
 PARAMETER_MAP = {
     "pH": "pH",
     "pO2": "pO2 (mmHg)",
