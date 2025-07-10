@@ -55,7 +55,7 @@ class ABLApp:
         file_path = filedialog.askopenfilename(filetypes=[("CSV Files", "*.csv")])
         if file_path:
             self.df = pd.read_csv(file_path)
-            print("Loaded columns:", self.df.columns.tolist())  # Debug: print all column names
+            print("Loaded columns:", self.df.columns.tolist())  # print all column names
             self.df = self.df.dropna(subset=["PatientId"])
             self.df["PatientId"] = self.df["PatientId"].astype(str)
             ids = sorted(self.df["PatientId"].unique())
